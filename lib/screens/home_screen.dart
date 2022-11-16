@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:monkey_shop_app/widgets/brand_highlights.dart';
+import 'package:monkey_shop_app/widgets/category_widget.dart';
 import '../widgets/banner_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black12,
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(40),
+        preferredSize: const Size.fromHeight(50),
         child: AppBar(
           // backgroundColor: Colors.blue.shade900,
           backgroundColor: Colors.blueGrey,
@@ -36,6 +37,7 @@ class HomeScreen extends StatelessWidget {
           SizedBox(height: 10,),
           BannerWidget(),
           BrandHighlights(),
+          CategoryWidget()
         ],
       ),
     );
